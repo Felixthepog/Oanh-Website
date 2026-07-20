@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Oanh Le, D.D.S. — San Mateo Dentist</title>
+<meta name="description" content="720 North El Camino Real, San Mateo, CA 94401. Call (650) 558-9253 or send a message to book your visit.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Oanh Le, D.D.S.<span>General &amp; Cosmetic Dentistry</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="new-patients.html">New Patients</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+16505589253">(650) 558-9253</a>
+      <a class="btn btn--coral" href="contact.html">Book a Visit</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <p class="eyebrow">Get In Touch</p>
+      <h1>Let's get your visit on the calendar.</h1>
+      <p>Call, email, or fill out the form below and we'll be in touch.</p>
+    </div>
+  </section>
+
+  <section class="section--ink">
+    <div class="container">
+      <div class="grid" style="grid-template-columns: 0.9fr 1.1fr; gap: clamp(2rem, 5vw, 3.5rem); align-items:start;">
+
+        <div data-reveal>
+          <dl class="info-list">
+            <div>
+              <dt>Location</dt>
+              <dd>Oanh Le, D.D.S.<br>720 North El Camino Real<br>San Mateo, CA 94401</dd>
+            </div>
+            <div>
+              <dt>Phone &amp; Fax</dt>
+              <dd>Phone: <a href="tel:+16505589253" style="color:var(--text-on-ink);">(650) 558-9253</a><br>Fax: 650-558-9256</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:Oanh.le.dds@gmail.com" style="color:var(--text-on-ink);">Oanh.le.dds@gmail.com</a></dd>
+            </div>
+          </dl>
+
+          <div style="margin-top:2rem;">
+            <dt style="font-size:0.78rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--coral); margin-bottom:0.7rem;">Office Hours</dt>
+            <div class="hours-row"><span>Monday</span><span>By Appointment Only</span></div>
+            <div class="hours-row"><span>Tuesday</span><span>8am – 5pm</span></div>
+            <div class="hours-row"><span>Wednesday</span><span>By Appointment Only</span></div>
+            <div class="hours-row"><span>Thursday</span><span>8am – 4pm</span></div>
+            <div class="hours-row"><span>Friday</span><span>8am – 5pm</span></div>
+            <div class="hours-row"><span>Saturday</span><span>8am – 2pm</span></div>
+            <div class="hours-row"><span>Sunday</span><span>By Appointment Only</span></div>
+          </div>
+
+          <div class="mt-lg" style="border-radius:14px; overflow:hidden; border:1px solid var(--line-on-ink);">
+            <img src="assets/img/office-exterior.jpg" alt="Oanh Le, D.D.S. office building at 720 North El Camino Real, San Mateo" style="width:100%; height:auto; display:block;">
+          </div>
+
+          <div class="map-frame mt-lg">
+            <iframe
+              src="https://www.google.com/maps?q=720+North+El+Camino+Real,+San+Mateo,+CA+94401&output=embed"
+              title="Map to Oanh Le, D.D.S. at 720 North El Camino Real, San Mateo, CA"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="form-card" data-reveal>
+          <h2 style="font-size:1.5rem; margin-bottom:0.4rem;">Send a message</h2>
+          <p class="form-note">If you have any questions or would like to set up an appointment, fill out this short form and we'll be in touch. This form is sent by email, not a secure messaging system — please don't include private health information you wouldn't send by email.</p>
+
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="field-row">
+              <div class="field">
+                <label for="first-name">First name <span class="req">*</span></label>
+                <input type="text" id="first-name" name="First Name" required autocomplete="given-name">
+              </div>
+              <div class="field">
+                <label for="last-name">Last name <span class="req">*</span></label>
+                <input type="text" id="last-name" name="Last Name" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email address <span class="req">*</span></label>
+                <input type="email" id="email" name="Email" required autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="req">*</span></label>
+                <input type="tel" id="phone" name="Phone" required autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="new-patient">Are you a new patient? <span class="req">*</span></label>
+              <select id="new-patient" name="New Patient" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="Service">
+                <option value="">Select a type of service</option>
+                <option>Cleaning and Prevention</option>
+                <option>Mouthguards</option>
+                <option>Cosmetic Dentistry</option>
+                <option>Pediatric Dentistry</option>
+                <option>Dental Implants</option>
+                <option>Dentures</option>
+                <option>Sleep Apnea Treatment</option>
+                <option>Tooth Extraction</option>
+                <option>Urgent Care</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="pref-date">Preferred date</label>
+                <input type="date" id="pref-date" name="Preferred Date">
+              </div>
+              <div class="field">
+                <label for="pref-time">Preferred time</label>
+                <select id="pref-time" name="Preferred Time">
+                  <option value="">Select an option</option>
+                  <option>8:00am</option><option>8:30am</option>
+                  <option>9:00am</option><option>9:30am</option>
+                  <option>10:00am</option><option>10:30am</option>
+                  <option>11:00am</option><option>11:30am</option>
+                  <option>1:00pm</option><option>1:30pm</option>
+                  <option>2:00pm</option><option>2:30pm</option>
+                  <option>3:00pm</option><option>3:30pm</option>
+                  <option>4:00pm</option><option>4:30pm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="comments">Comments or questions</label>
+              <textarea id="comments" name="Comments"></textarea>
+            </div>
+
+            <label class="field-check" style="margin-bottom:1.4rem;">
+              <input type="checkbox" required>
+              <span>I understand this form is sent by email and not a secure messaging system, and shouldn't be used to transmit private health information. <span class="req">*</span></span>
+            </label>
+
+            <button type="submit" class="btn btn--coral">Submit</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Oanh Le, D.D.S.</p>
+        <p>720 North El Camino Real<br>San Mateo, CA 94401</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="new-patients.html">New Patients</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+16505589253">(650) 558-9253</a></li>
+          <li><a href="mailto:Oanh.le.dds@gmail.com">Oanh.le.dds@gmail.com</a></li>
+          <li>Fax: 650-558-9256</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Oanh Le, D.D.S. All rights reserved.</span>
+      <span>San Mateo, California</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
