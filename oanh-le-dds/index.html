@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oanh Le, D.D.S. | General &amp; Cosmetic Dentistry in San Mateo, CA</title>
-<meta name="description" content="Dr. Oanh Le, D.D.S. has provided general and cosmetic dentistry to San Mateo families since the early 1990s. UCSF-trained and teaching faculty. Accepting new patients.">
+<meta name="description" content="Dr. Oanh Le, D.D.S. has provided general and cosmetic dentistry to San Mateo families since the early 1990s. Accepting new patients.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,20 +38,23 @@
 
 <main id="main">
 
-  <!-- CALL LINE -->
-  <section class="section--cream section--tight" style="padding-bottom:0;">
-    <div class="container text-center">
-      <p>Call me at <a href="tel:+16505589253" style="color:inherit; text-decoration:underline;">(650) 558-9253</a> or email me at <a href="mailto:Oanh.le.dds@gmail.com" style="color:inherit; text-decoration:underline;">Oanh.le.dds@gmail.com</a></p>
-    </div>
-  </section>
-
   <!-- HERO PHOTO -->
   <section class="section--cream">
     <div class="container">
-      <div class="hero-art">
-        <img src="assets/img/family-hero-2.png" alt="A smiling family of four" class="hero-photo">
+      <div class="hero-art" id="hero-carousel">
+        <img src="assets/img/family-hero-2.png" alt="A smiling family of four" class="hero-photo is-active" data-slide="0">
+        <img src="assets/img/family-piggyback.png" alt="A father and mother giving their two children a piggyback ride outdoors" class="hero-photo" data-slide="1">
+        <img src="assets/img/family-walking.png" alt="A multi-generational family walking together through the woods" class="hero-photo" data-slide="2">
       </div>
-      <p class="text-center" style="margin-top:1rem; color:var(--text-on-cream-soft); font-size:0.92rem;">30+ years in practice &nbsp;·&nbsp; 9 services offered &nbsp;·&nbsp; 4.8★ on Yelp</p>
+      <div class="hero-dots" id="hero-dots">
+        <button type="button" class="is-active" data-goto="0" aria-label="Show photo 1"></button>
+        <button type="button" data-goto="1" aria-label="Show photo 2"></button>
+        <button type="button" data-goto="2" aria-label="Show photo 3"></button>
+      </div>
+      <div class="hero-lines">
+        <p>Call me at <a href="tel:+16505589253" class="hero-phone-highlight">(650) 558-9253</a> or Email me at <a href="mailto:Oanh.le.dds@gmail.com" style="color:inherit;">Oanh.le.dds@gmail.com</a></p>
+        <p style="color:var(--text-on-cream-soft); font-weight:600;">San Mateo based &nbsp;·&nbsp; 30+ years in practice &nbsp;·&nbsp; 9 services offered &nbsp;·&nbsp; 4.8★ on Yelp</p>
+      </div>
     </div>
   </section>
 
@@ -78,14 +81,12 @@
           <img src="assets/img/affiliations/smcds.png" alt="San Mateo County Dental Society">
           <img src="assets/img/affiliations/ada.png" alt="American Dental Association">
           <img src="assets/img/affiliations/cda.png" alt="California Dental Association">
-          <img src="assets/img/affiliations/ucsf.png" alt="UCSF School of Dentistry, Clinical Faculty">
         </div>
         <ul class="affiliation-names">
           <li>American College of Dentists</li>
           <li>San Mateo County Dental Society</li>
           <li>American Dental Association</li>
           <li>California Dental Association</li>
-          <li>UCSF School of Dentistry, Clinical Faculty</li>
         </ul>
       </div>
     </div>

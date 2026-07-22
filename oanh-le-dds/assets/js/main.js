@@ -20,6 +20,43 @@
     });
   }
 
+  /* Homepage hero photo carousel */
+  var carousel = document.querySelector("#hero-carousel");
+  var dotsWrap = document.querySelector("#hero-dots");
+  if (carousel && dotsWrap) {
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll(".hero-photo"));
+    var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll("button"));
+    var current = 0;
+    var timer;
+
+    function goTo(index) {
+      slides[current].classList.remove("is-active");
+      dots[current].classList.remove("is-active");
+      current = index;
+      slides[current].classList.add("is-active");
+      dots[current].classList.add("is-active");
+    }
+
+    function next() {
+      goTo((current + 1) % slides.length);
+    }
+
+    function startAutoplay() {
+      timer = window.setInterval(next, 6000);
+    }
+
+    if (slides.length > 1) {
+      dots.forEach(function (dot, i) {
+        dot.addEventListener("click", function () {
+          window.clearInterval(timer);
+          goTo(i);
+          startAutoplay();
+        });
+      });
+      startAutoplay();
+    }
+  }
+
   /* Footer year */
   var yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
